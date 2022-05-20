@@ -61,12 +61,11 @@ contract ChainBattles is ERC721URIStorage{
     uint256 Hp = tokenIdDetails[tokenId].HP;
     return Hp.toString();
     }
-    
     function getStrength(uint256 tokenId) public view returns (string memory) {
     return tokenIdDetails[tokenId].Strength.toString();
     }
 
-
+    
     function getTrainId(uint256 tokenId) public view returns (string memory) {
      uint256 TrainId = tokenIdDetails[tokenId].TrainId;
     return TrainId.toString();
